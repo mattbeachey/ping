@@ -1,2 +1,0 @@
-# ping
-Created with CodeSandbox

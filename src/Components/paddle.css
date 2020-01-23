@@ -1,12 +1,11 @@
 .paddle {
   position: absolute;
-  bottom: 50%;
+  bottom: 300px;
   height: 100px;
   width: 15px;
   background-color: red;
   border-radius: 4px;
   box-shadow: 2px 2px 2px;
-  transform: translateY(50%);
   margin: 10px;
 }
 

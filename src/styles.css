@@ -1,9 +1,15 @@
 .gameboard {
-  font-family: sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 200%;
   text-align: center;
   width: 700px; 
   height: 500px;
   background-color: rgba(102, 51, 153, 0.479);
   border: 2px solid rebeccapurple;
   margin: 20px auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

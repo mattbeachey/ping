@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
 import Paddle from "./Components/Paddle";
+import Ball from "./Components/Ball"
 
 
 export default function App() {
@@ -50,6 +51,7 @@ export default function App() {
 
   return (
     <div className="gameboard">
+      <Ball />
       <Paddle paddleY={p1PaddleY} />
       <Paddle isPlayer2 paddleY={p2PaddleY} />
       <h1>Fight!!!</h1>

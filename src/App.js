@@ -1,15 +1,14 @@
 import React from "react";
 import "./styles.css";
-import Paddle1 from "./Components/Paddle1";
-import Paddle2 from "./Components/Paddle2";
+import Paddle from "./Components/Paddle";
+
 
 export default function App() {
   return (
-    <div className="App">
-      <Paddle1 />
-      <Paddle2 />
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div className="gameboard">
+      <Paddle isPlayer1/>
+      <Paddle isPlayer2/>
+      <h1>Fight!!!</h1>
     </div>
   );
 }

@@ -98,14 +98,28 @@ export default function App() {
 
   useEffect(() => {
     const handle = setTimeout(() => {
+        let x = state.ball.x;
+        let y = state.ball.y;
         let dx = state.ball.dx;
         let dy = state.ball.dy;
-        if (state.ball.x + state.ball.dx > 700 || state.ball.x + state.ball.dx < 0){
+
+        let paddle1Y = state.paddle1.y + 100;
+        let paddle2Y = state.paddle2.y + 100;
+
+        if (state.ball.x + state.ball.dx > 660 || state.ball.x + state.ball.dx < 0){
             dx = -dx
         }
-        if (state.ball.y + state.ball.dy > 500 || state.ball.y + state.ball.dy < 0){
+        if (state.ball.y + state.ball.dy > 460 || state.ball.y + state.ball.dy < 0){
             dy = -dy
         }
+
+        console.log("XXXXXX " + x)
+        console.log("YYYYYYY" + (y + dy))
+        console.log("PADDLE " + paddle1Y)
+        if(paddle1Y < y + dy && paddle1Y + 100 > y + dy && x < 25){
+          dx = -dx
+        }
+
         dispatch({
           type: "MOVE_BALL",
           payload: {

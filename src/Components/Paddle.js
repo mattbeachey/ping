@@ -2,7 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./paddle.css";
 
 
-export default function Paddle({ isPlayer2, paddleY }) {
+export default function Paddle({ isPlayer2, paddleY, p1MoveUp, p2MoveUp }) {
+
+
+if (p1MoveUp = true) {
+  console.log("move UPPPP " + paddleY)
+}
+
+
 
   return (
     <div>
